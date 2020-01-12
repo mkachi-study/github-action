@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MKachi/github-action.git"
@@ -15,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/MKachi/github-action/issues"
   },
-  "homepage": "https://github.com/MKachi/github-action#readme"
+  "homepage": "https://github.com/MKachi/github-action#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }

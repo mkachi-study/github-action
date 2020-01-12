@@ -1,4 +1,4 @@
-name: Node CI
+name: Client
 
 on: [push]
 
@@ -19,6 +19,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm start
       run: |
-        npm start
+        cd ./client
+        npm install
+        node app.js ${SERVER_IP}
       env:
         CI: true
