@@ -21,6 +21,6 @@ jobs:
       run: |
         cd ./client
         npm install
-        node app.js ${SERVER_IP}
+        node app.js ${{ SERVER_IP }}
       env:
         CI: true
