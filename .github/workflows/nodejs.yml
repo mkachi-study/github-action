@@ -19,8 +19,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm start
       run: |
+        echo ${TEST}
         cd ./client
         npm install
-        node app.js ${{ SERVER_IP }}
+        node app.js ${SERVER_IP}
       env:
         CI: true
