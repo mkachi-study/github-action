@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: secret value test
-        run: |
+      run: |
           node secret.js ${TEST}
 
     - name: install & request
