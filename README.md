@@ -17,3 +17,7 @@
 `server`를 `npm start`하시고 `client`를 수정하여 `github action`을 작동하게 하시면 됩니다.  
 Github 설정에서 `Secrets`에 `SERVER_IP`라는 이름으로 요청 주소를 입력해주시면 됩니다.  
 `예) http://localhost:8000/`
+
+### github-action 관련 문서
+
+https://help.github.com/en/actions
