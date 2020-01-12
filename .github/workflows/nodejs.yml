@@ -17,9 +17,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm start
+
+    - name: secret value test
+        run: |
+          node secret.js ${TEST}
+
+    - name: install & request
       run: |
-        echo ${TEST}
         cd ./client
         npm install
         node app.js ${SERVER_IP}
