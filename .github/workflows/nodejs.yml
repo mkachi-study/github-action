@@ -21,7 +21,7 @@ jobs:
     - name: secret value test
       run: |
           cd ./client
-          node secret.js ${TEST}
+          node secret.js ${{TEST}}
 
     - name: install & request
       run: |
