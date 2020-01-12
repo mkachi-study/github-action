@@ -21,12 +21,12 @@ jobs:
     - name: secret value test
       run: |
           cd ./client
-          node secret.js ${{ TEST }}
+          node secret.js ${{ secrets.TEST }}
 
     - name: install & request
       run: |
         cd ./client
         npm install
-        node app.js ${SERVER_IP}
+        node app.js ${{ secrets.SERVER_IP }}
       env:
         CI: true
